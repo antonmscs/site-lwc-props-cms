@@ -1,18 +1,22 @@
-# Salesforce DX Project: Next Steps
+# Experience Cloud Website with LWC component
+This project is an example of the website with LWC component, that has properties (stored in a digital experience bundle) and use Salesforce CMS (linking an image stored in CMS)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Initial Setup
+Make sure that the Org has the following settings enabled:
+- Digital Experience -> Settings: Enable Digital Experience 
+- Digital Experience -> Settings: check/enable ExperienceBundle Metadata API
 
-## How Do You Plan to Deploy Your Changes?
+Update the Org specific values in the following files:
+force-app/main/default/networks/byolwr20240520e.network-meta
+{EMAIL_SENDER_ADDRESS} - replace with email address to use as a Sender for the emails from this website
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+force-app/main/default/sites/byolwr20240520e.site-meta
+{SITE_ADMIN} - replace with the user name to be assigned as a site admin
+{SITE_GUEST_RECORD_DEFAULT_OWNER} - replace with the user name - by default it's the same as {SITE_ADMIN}
 
-## Configure Your Salesforce DX Project
+## Website
+There is a Build Your Own (LWR) Enhanced Website with minimal settings and is unpublished.
+Site Name: byolwr20240520e
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## Deployment
+sfdx project deploy start  --manifest manifest/package.xml
