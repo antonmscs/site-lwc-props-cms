@@ -13,6 +13,10 @@
         <name>DigitalExperienceConfig</name>
     </types> 
     <types>
+        <members>propertiesCMSImage</members>
+        <name>LightningComponentBundle</name>
+    </types> 
+    <types>
         <members>byolwr20240520e</members>
         <name>Network</name>
     </types>
