@@ -1,0 +1,15 @@
+{
+  "type" : "sfdc_cms__image",
+  "title" : "Platform App Builder",
+  "contentBody" : {
+    "sfdc_cms:media" : {
+      "source" : {
+        "mimeType" : "image/png",
+        "ref" : "0sNaj000000IZXBEA4",
+        "type" : "file",
+        "size" : 14340
+      },
+      "url" : "/cms/media/MCBOXRC64GQBATLAG4AB5TY2HZCQ?version=1.1"
+    }
+  }
+}

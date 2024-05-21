@@ -16,9 +16,10 @@
           "children" : [ {
             "children" : [ {
               "attributes" : {
-                "hiddenMessageColor" : "green",
-                "hiddenMessageSize" : "large",
-                "name" : "Developer 1",
+                "cmsImage" : "MCGOAHOV3MOFBHLMOLOMPPXOJL2I",
+                "hiddenMessageColor" : "red",
+                "hiddenMessageSize" : "normal",
+                "name" : "Administrator",
                 "showHiddenMessage" : true
               },
               "definition" : "c:propertiesCMSImage",
@@ -26,9 +27,10 @@
               "type" : "component"
             }, {
               "attributes" : {
+                "cmsImage" : "MCBOXRC64GQBATLAG4AB5TY2HZCQ",
                 "hiddenMessageColor" : "black",
                 "hiddenMessageSize" : "normal",
-                "name" : "Developer 2",
+                "name" : "Platform App Builder",
                 "showHiddenMessage" : false
               },
               "definition" : "c:propertiesCMSImage",
